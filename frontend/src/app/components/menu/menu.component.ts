@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  audioPlayer!: HTMLAudioElement;
+
 
   ngOnInit(): void {
+
   }
 
+  playAudio() {
+    this.audioPlayer = new Audio();
+    this.audioPlayer.src = "../../../assets/audio/1.mp3";
+    this.audioPlayer.load();
+    this.audioPlayer.play();
+  }
+
+  stopAudio() {
+    this.audioPlayer = new Audio();
+    this.audioPlayer.();
+  }
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {take} from "rxjs/operators";
+import {BuildInfoService} from "../../services/build-info/build-info.service";
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  year?: number;
+  buildNumber: string = '';
+
+  constructor(private buildInfo: BuildInfoService) { }
 
   ngOnInit(): void {
+    this.year = new Date().getFullYear();
+    this.buildInfo.getBuildInfo().pipe(take(1)).subscribe(
+      buildInfo => this.buildNumber = buildInfo.buildNumber
+    );
   }
 
 }

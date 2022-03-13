@@ -1,4 +1,18 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: black;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+mat-icon {
+  opacity: 50%;
+}
+
+mat-icon:hover {
+  opacity: 100%;
 }

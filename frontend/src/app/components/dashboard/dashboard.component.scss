@@ -1,6 +1,13 @@
 .background {
-  height: 840px;
-  background-image: url("/assets/img/background.png");
-  background-size: auto auto;
-  background-position: center center;
+  max-width:100%;
+  max-height:100%;
+  background-position-x: center;
+  background-size: cover;
+  height: 560px;
+
+  //height: 400px;
+  background-image: url("/assets/img/7.jpg");
+  background-repeat: no-repeat;
+  opacity: 80%;
+  box-shadow: 0 0 25px 25px black inset;
 }
