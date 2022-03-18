@@ -23,6 +23,6 @@ export class MenuComponent implements OnInit {
 
   stopAudio() {
     this.audioPlayer = new Audio();
-    this.audioPlayer.();
+    // this.audioPlayer.();
   }
 }
