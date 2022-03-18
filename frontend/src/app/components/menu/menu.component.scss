@@ -1,23 +1,24 @@
-h1 {
-  font-family: Georgia,Times,Times New Roman,serif;
-  font-size: calc(30px + 1.2vw);
-  letter-spacing: 10px;
-  background: black;
-  color: #fff;
-  text-align: center;
-  line-height: 50px;
-  margin: 5vh 5vw 5vh 5vw;
-}
-
-.mat-icon-button mat-icon {
-  font-size: calc(30px + 1.2vw);
-}
-
-button {
-  padding-right: 60px;
-}
-//.sticky {
-//  position: -webkit-sticky; /* Safari */
-//  position: sticky;
-//  top: 0;
+//.mat-icon-button mat-icon {
+//  //transform: scale(2);
+//  font-size: calc(30px + 1.2vw);
+//  width: calc(30px + 1.2vw);
+//  height: calc(30px + 1.2vh);
 //}
+
+mat-toolbar {
+  background: black;
+}
+
+.space {
+  flex: 1 1 auto;
+}
+h1 {
+  font-size: calc(1.2vw);
+  letter-spacing: 8px;
+  color: #fff;
+  line-height: 50px;
+}
+
+mat-icon {
+  color: white;
+}

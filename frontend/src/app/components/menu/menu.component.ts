@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -8,8 +8,6 @@ import {Component, OnInit} from '@angular/core';
 export class MenuComponent {
 
   audioPlayer!: HTMLAudioElement;
-
-  title = 'DZIEŃ, W KTÓRYM ZGASŁO SŁOŃCE';
 
   playAudio() {
     if (!this.audioPlayer) {

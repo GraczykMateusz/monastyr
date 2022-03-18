@@ -1,10 +1,6 @@
-<div fxLayout="row" fxLayoutAlign="space-between center">
-  <div fxFlex>
-    <h1>{{title}}</h1>
-  </div>
-</div>
+<mat-toolbar style="position: sticky">
+  <h1 class="space">MONASTYR</h1>
 
-<div style="position: fixed; right: 15px; top: 15px">
   <button mat-icon-button [matMenuTriggerFor]="menu">
     <mat-icon>account_circle</mat-icon>
   </button>
@@ -23,22 +19,20 @@
   <button mat-icon-button [matMenuTriggerFor]="settings">
     <mat-icon>reorder</mat-icon>
   </button>
+  <!--  </div>-->
 
   <mat-menu #settings="matMenu">
     <button mat-menu-item>
       <mat-icon>audiotrack</mat-icon>
-      <span>Audio</span>
+      <span>Playlista</span>
     </button>
-    <button mat-menu-item disabled>
-      <mat-icon>logout</mat-icon>
-      <span>Wyloguj się</span>
+    <button mat-menu-item (click)="playAudio()">
+      <mat-icon>play_circle_outline</mat-icon>
+      <span>Włącz audio</span>
+    </button>
+    <button mat-menu-item (click)="stopAudio()">
+      <mat-icon>pause_circle_outline</mat-icon>
+      <span>Wyłącz audio</span>
     </button>
   </mat-menu>
-
-  <button mat-icon-button (click)="playAudio()">
-    <mat-icon>play_circle_outline</mat-icon>
-  </button>
-  <button mat-icon-button (click)="stopAudio()">
-    <mat-icon>pause_circle_outline</mat-icon>
-  </button>
-</div>
+</mat-toolbar>
