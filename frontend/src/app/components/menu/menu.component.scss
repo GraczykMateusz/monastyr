@@ -1,24 +1,26 @@
-//.mat-icon-button mat-icon {
-//  //transform: scale(2);
-//  font-size: calc(30px + 1.2vw);
-//  width: calc(30px + 1.2vw);
-//  height: calc(30px + 1.2vh);
-//}
-
 mat-toolbar {
   background: black;
+  border-bottom: grey;
+  border-width: 1px;
+  border-style: solid;
 }
 
 .space {
   flex: 1 1 auto;
 }
+
 h1 {
-  font-size: calc(1.2vw);
+  font-family: Georgia, Times, Times New Roman, serif;
+  font-weight: bold;
+  font-size: calc(1em + 1.2vw);
   letter-spacing: 8px;
   color: #fff;
   line-height: 50px;
 }
 
-mat-icon {
+.mat-icon-button mat-icon {
   color: white;
+  font-size: calc(19px + 1.0vw);
+  width: calc(19px + 1.0vw);
+  height: calc(19px + 1.0vh);
 }
