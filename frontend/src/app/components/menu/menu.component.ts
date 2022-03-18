@@ -1,28 +1,31 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss']
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent {
 
   audioPlayer!: HTMLAudioElement;
 
-
-  ngOnInit(): void {
-
-  }
+  title = 'DZIEŃ, W KTÓRYM ZGASŁO SŁOŃCE';
 
   playAudio() {
-    this.audioPlayer = new Audio();
-    this.audioPlayer.src = "../../../assets/audio/1.mp3";
-    this.audioPlayer.load();
-    this.audioPlayer.play();
+    if (!this.audioPlayer) {
+      this.audioPlayer = new Audio();
+      this.audioPlayer.src = "../../../assets/audio/1.mp3";
+      this.audioPlayer.load();
+      this.audioPlayer.play();
+    }
+    if (this.audioPlayer.paused) {
+      this.audioPlayer.play();
+    }
   }
 
   stopAudio() {
-    this.audioPlayer = new Audio();
-    // this.audioPlayer.();
+    if (this.audioPlayer) {
+      this.audioPlayer.pause();
+    }
   }
 }

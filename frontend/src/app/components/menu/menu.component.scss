@@ -1,10 +1,23 @@
-.mat-toolbar {
+h1 {
+  font-family: Georgia,Times,Times New Roman,serif;
+  font-size: calc(30px + 1.2vw);
+  letter-spacing: 10px;
   background: black;
   color: #fff;
+  text-align: center;
+  line-height: 50px;
+  margin: 5vh 5vw 5vh 5vw;
 }
 
-.title {
-  font-family: Georgia,Times,Times New Roman,serif;
-  font-size: 1.6em;
-  letter-spacing: 10px;
+.mat-icon-button mat-icon {
+  font-size: calc(30px + 1.2vw);
 }
+
+button {
+  padding-right: 60px;
+}
+//.sticky {
+//  position: -webkit-sticky; /* Safari */
+//  position: sticky;
+//  top: 0;
+//}
