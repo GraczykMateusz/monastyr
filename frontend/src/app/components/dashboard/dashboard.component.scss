@@ -41,18 +41,15 @@ h1 {
 }
 
 .second {
-  //width: 0;
-  //height: 0;
-  //border-left: 50px solid transparent;
-  border-bottom: 50px solid white;
-  border-right: 212vh solid transparent;
-  //border-right: 50px solid transparent;
-  //background-color: white;
-  //height: 10vh;
+  background-color: white;
+  height: 4vh;
+  width: 100vw;
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  margin-bottom: -1px;
 }
 
 .text-container-second {
-  padding-top: 4vh;
+  padding-top: 1vh;
   text-align: justify;
   width: 75vw;
   margin: auto;
@@ -61,4 +58,36 @@ h1 {
   font-family: "Times New Roman", serif;
   background-color: white;
   color: black;
+  padding-bottom: 13px;
+}
+
+.text-container-second::first-letter {
+  font-size: 2.1em;
+  font-family: "Calisto MT", serif;
+}
+
+.third {
+  background-color: white;
+  margin-top: -1px;
+  height: 4vh;
+  width: 100vw;
+  clip-path: polygon(100% 0, 100% 100%, 0 0);
+}
+
+.text-container-third {
+  width: 75vw;
+  margin: auto;
+  font-size: 1.6em;
+  line-height: 32px;
+  font-family: "Times New Roman", serif;
+  color: white;
+  padding-bottom: 13px;
+}
+
+.char {
+  width: 30vw;
+}
+
+img {
+  width: 70%;
 }
