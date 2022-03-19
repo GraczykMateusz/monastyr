@@ -9,18 +9,23 @@ mat-toolbar {
   flex: 1 1 auto;
 }
 
-h1 {
-  font-family: Georgia, Times, Times New Roman, serif;
-  font-weight: bold;
-  font-size: calc(1em + 1.2vw);
-  letter-spacing: 8px;
-  color: #fff;
-  line-height: 50px;
-}
-
 .mat-icon-button mat-icon {
   color: white;
   font-size: calc(19px + 1.0vw);
   width: calc(19px + 1.0vw);
   height: calc(19px + 1.0vh);
+}
+
+mat-icon {
+  opacity: 50%;
+}
+
+.mat-menu-item mat-icon,
+mat-icon:hover{
+  opacity: 100%;
+  margin: auto;
+}
+
+.account-button {
+  padding-right: 10px;
 }

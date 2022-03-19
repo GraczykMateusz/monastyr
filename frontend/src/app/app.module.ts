@@ -10,11 +10,10 @@ import {FlexModule} from "@angular/flex-layout";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from "@angular/common/http";
 import {NgImageSliderModule} from "ng-image-slider";
 import {MatMenuModule} from "@angular/material/menu";
-import {MatDividerModule} from "@angular/material/divider";
 
 @NgModule({
   declarations: [
